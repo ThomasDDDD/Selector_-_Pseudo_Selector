@@ -4,17 +4,16 @@
 }
 /*Allgemeine Selectoren für Layout*/
 body {
-  width: 100vw;
-  padding: 3%;
+  padding: 2%;
 }
 table {
-  width: 95%;
+  width: 100vw;
 }
 td {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 5%;
+  width: 4.5vw;
   aspect-ratio: 1/1;
   border: 1px solid black;
   margin: 1px;
@@ -24,15 +23,16 @@ td {
 td:empty {
   border: 1px solid transparent;
 }
+/* Alle grün ausser die leeren */
+td:not(:empty) {
+  background-color: #3d9f4e;
+}
 /*Die Border der zwei leeren mit farbe wieder einfügen*/
-
 tr:nth-of-type(6) td:nth-child(3),
 tr:nth-of-type(7) td:nth-child(3) {
   border: 1px solid black;
 }
-
 /*Farben einzeln selectieren*/
-
 tr:nth-of-type(1) td:nth-child(1),
 tr:nth-of-type(2) td:nth-child(14),
 tr:nth-of-type(2) td:nth-child(15),
@@ -139,7 +139,7 @@ tr:nth-of-type(7) td:nth-child(13),
 tr:nth-of-type(7) td:nth-child(14) {
   background-color: #ffc0cd;
 }
-
+/*
 tr:nth-of-type(4) td:nth-child(3),
 tr:nth-of-type(4) td:nth-child(4),
 tr:nth-of-type(4) td:nth-child(5),
@@ -180,3 +180,4 @@ tr:nth-of-type(7) td:nth-child(11),
 tr:nth-of-type(7) td:nth-child(12) {
   background-color: #3d9f4e;
 }
+*/
